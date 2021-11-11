@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS coolblog_db;
+CREATE DATABASE coolblog_db;
