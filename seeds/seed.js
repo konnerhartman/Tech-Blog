@@ -20,10 +20,12 @@ const seedDatabase = async () => {
     });
   }
 
+  // const comments = await Comment.bulkCreate(commentData);
+  
   for (const comment of commentData) {
     await Comment.create({
       ...comment,
-      post_id: posts[Math.floor(Math.random() * posts.length)].id,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 

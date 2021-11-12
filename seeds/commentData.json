@@ -1,21 +1,21 @@
 [
     {
-        "comment": "Me too!",
+        "user_comment": "Me too!",
         "user_id": 1,
         "post_id": 4
     },
     {
-        "comment": "You would have nothing to even work with without frontend!",
+        "user_comment": "You would have nothing to even work with without frontend!",
         "user_id": 2,
         "post_id": 3
     },
     {
-        "comment": "Lets see you add some security to that static page of yours...",
+        "user_comment": "Lets see you add some security to that static page of yours...",
         "user_id": 3,
         "post_id": 2
     },
     {
-        "comment": "It's truly humbling.",
+        "user_comment": "It's truly humbling.",
         "user_id": 4,
         "post_id": 1
     }
