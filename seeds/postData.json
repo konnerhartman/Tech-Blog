@@ -1,0 +1,22 @@
+[
+    {
+        "title": "The Struggles",
+        "content": "Coding is amazing because one second you feel like a coding God, then the very next you feel like you have no idea what you're evn doing.",
+        "user_id": 1
+    },
+    {
+        "title": "HTM HELL YEAH!",
+        "content": "Frontend is better than backend. Don't even argue.",
+        "user_id": 2
+    },
+    {
+        "title": "Backend Runs the World",
+        "content": "What would the web be without the functionality from the backend? NOTHING!",
+        "user_id": 3
+    },
+    {
+        "title": "Full Stack FTW",
+        "content": "Most people are VERY passionate about either frontend or backend. I'm just in the middle chilling.",
+        "user_id": 4
+    }
+]
