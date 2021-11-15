@@ -19,8 +19,6 @@ const seedDatabase = async () => {
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
-
-  // const comments = await Comment.bulkCreate(commentData);
   
   for (const comment of commentData) {
     await Comment.create({
