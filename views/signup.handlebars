@@ -1,15 +1,19 @@
-<form class="row">
-    <h3>Create an account!</h3>
-    <div class="bg-light p-3 rounded col-lg-6 col-sm-12">
-        <div class="mb-3 d-block">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+<div class="signupForm">
+    <form class="row">
+        <h3>Create an account!</h3>
+        <div class="bg-light p-3 rounded col-lg-6 col-sm-12">
+            <div class="mb-3 d-block">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="usernameSignup" placeholder="Username">
+            </div>
+            <div class="mb-3 d-block">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" class="form-control" id="passwordSignup" placeholder="Password">
+            </div>
+            <button class="btn btn-primary d-block">Sign In</button>
+            Already have an account? <a href="/login">Log in!</a>
         </div>
-        <div class="mb-3 d-block">
-            <label for="password" class="form-label">Password</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
-        </div>
-        <button class="btn btn-primary d-block">Sign In</button>
-        Already have an account? <a href="/login">Log in!</a>
-    </div>
-</form>
+    </form>
+</div>
+
+<script src="/js/login.js"></script>
