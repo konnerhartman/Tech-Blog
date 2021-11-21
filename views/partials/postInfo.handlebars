@@ -14,6 +14,14 @@
                 <p class="card-text">{{content}}</p>
                 <a href="#" class="card-link">Comment</a>
             </div>
+            <div>
+                {{#if posts.length}}
+                    </br>
+                    {{#each comments as |comment|}}
+                        {{> comments post.comment}}
+                    {{/each}}
+                {{/if}}
+            </div>
         </div>
     </div>
 </div>

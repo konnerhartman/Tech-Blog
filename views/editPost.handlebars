@@ -1,17 +1,14 @@
 <div class="card">
     <h3 class="card-header">Edit Post: {{post.title}}</h3>
-    <form class="card-body edit-animal-form">
-        <label for="animal-name" class="form-label">Update Title:</label>
-        <input name="animal-name" type="text" value="{{post.title}}" class="form-input" />
+    <form class="card-body edit-post-form">
+        <label for="postTitle" class="form-label">Update Title:</label>
+        <input name="postTitle" type="text" value="{{post.title}}" class="form-input" />
         </br>
-        <label class="form-label" for="description">Update Content:</label>
-        <input name="description" type="text" value="{{post.content}}" class="form-input" />
-        </br>
-        <label class="form-label" for="location">Update Location:</label>
-        <input name="location" type="text" value="{{post.location}}" class="form-input" />
+        <label class="updateContent" for="content">Update Content:</label>
+        <input name="updateContent" type="text" value="{{post.content}}" class="form-input" />
         </br>
         <button type="submit" class="btn btn-primary">Update Post</button>
-        <button type="click" data-id="{{post.id}}" class="animal-list btn btn-danger">Delete Post</button>
+        <button type="click" data-id="{{post.id}}" class="post-list btn btn-danger">Delete Post</button>
     </form>
 </div>
 

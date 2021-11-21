@@ -45,10 +45,12 @@ router.get('/', withAuth, async (req, res) => {
     }
   });
   
-router.get('/:id', withAuth, async (req, res) => {
-    try {
+router.get('/edit/:id', withAuth, async (req, res) => {
       // Find the logged in user based on the session ID
-      const postData = await Post.findAll(req.session.user_id, {
+      Post.findOne({
+        where: {
+            id: req.params.id
+        },
         attributes: [ 'id', 'title', 'content', 'date_created'],
         include: [
           {
@@ -64,17 +66,19 @@ router.get('/:id', withAuth, async (req, res) => {
               }
           }
         ]
-      });
-  
-      const post = postData.get({ plain: true });
-  
-      res.render('dashboard', {
-        ...post,
-        logged_in: true
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-});
+      })
+    .then(postData => {
+      if (!postData) {
+          res.status(404).json({ message: 'No post found with this id' });
+          return;
+      }
 
+      const post = postData.get({ plain: true });
+      res.render('editPost', { post, logged_in: true });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
 module.exports = router;
