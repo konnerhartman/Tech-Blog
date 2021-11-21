@@ -81,4 +81,9 @@ router.get('/edit/:id', withAuth, async (req, res) => {
         res.status(500).json(err);
     });
 });
+
+router.get('/new', (req, res) => {
+  res.render('newPost', {logged_in: true });
+});
+
 module.exports = router;
