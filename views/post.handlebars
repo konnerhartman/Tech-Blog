@@ -10,15 +10,22 @@
             </div>
             <div>
                 <p class="card-text">{{content}}</p>
-                <a href="#" class="card-link">Comment</a>
-                <div>
-                    <h5>
-                        COMMENTS
-                    </h5>
+                <form class="card-body comment-form">
+                    <label for="commentText" class="form-label">Comment:</label>
                     </br>
-                    {{> comments comments}}
-                </div>
+                    <input name="commentText" id="commentText" type="text" class="form-input" />
+                    </br>
+                    <button type="submit" class="btn btn-primary">POST</button>
+                </form>
             </div>
+            <div>
+                <h5>
+                    COMMENTS
+                </h5>
+                {{> comments comments}}
+            </div>           
         </div>
     </div>
 </div>
+
+<script src="/js/comment.js"></script>
