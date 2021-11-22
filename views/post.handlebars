@@ -5,13 +5,19 @@
             <div style="background-color: #fd9843;">
                 <h3 class="card-title">{{title}}</h3>            
                 <h5 class="card-subtitle mb-2">
-                    <a href="/users/{{id}}">{{user.username}}</a>
+                    Written by: <a href="/users/{{id}}">{{user.username}}</a>
                 </h5>
             </div>
             <div>
                 <p class="card-text">{{content}}</p>
                 <a href="#" class="card-link">Comment</a>
-                {{> comments post.comment}}
+                <div>
+                    <h5>
+                        COMMENTS
+                    </h5>
+                    </br>
+                    {{> comments post.comments}}
+                </div>
             </div>
         </div>
     </div>

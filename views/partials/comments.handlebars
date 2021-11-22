@@ -1,8 +1,10 @@
 <div>
+    {{#each this}}
     <div>
-        {{post.user_comment}}
+        {{user_comment}}
     </div>
     <div>
-        ~{{comment.username}}, {{format_date date_created}}
+        ~{{user.username}}, {{format_date date_created}}
     </div>
+    {{/each}}
 </div>
