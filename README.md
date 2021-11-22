@@ -14,6 +14,7 @@
   
   ## Table of Contents
   - [Description](#)
+  - [Screencapture](#screencapture)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
@@ -22,6 +23,9 @@
   - [Tests](#tests)
   - [Questions](#questions)
   
+  ## Screencapture
+  ![Gif](public/screencaps/BuggysBlog.gif)
+
   ## Installation
   There is no instalation process for this app as it is loaded to a live server.
   
@@ -39,7 +43,14 @@
   BCS Learning Assistance 
 
   ## Links
-  
+  Deployed Link:
+  </br>
+  https://buggys-blog.herokuapp.com/
+  </br>
+  </br>
+  GitHub Repository:
+  </br>
+  https://github.com/konnerhartman/Tech-Blog
   
   ## Tests
   There are no tests included with this project.
