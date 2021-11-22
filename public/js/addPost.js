@@ -2,7 +2,7 @@ const newFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#title').value.trim();
-    const content = document.querySelector('#body').value.trim();
+    const content = document.querySelector('#content').value.trim();
 
     if (title && content) {
     const response = await fetch(`/api/posts`, {
@@ -23,7 +23,7 @@ const newFormHandler = async (event) => {
     }
    }
   };
-
+  
 document
     .querySelector('.new-post-form')
     .addEventListener('submit', newFormHandler);
