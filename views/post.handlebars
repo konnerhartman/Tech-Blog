@@ -4,12 +4,12 @@
         <div class="card-body">
             <div class="card rounded" style="background-color: #fd9843;">
                 <h3 class="card-title">{{title}}</h3>            
-                <p class="card-subtitle mb-2">
-                    Written by: {{user.username}} on {{format_date date_created}}
-                </p>
             </div>
             <div class="card rounded" style="background-color: #ffab66;">
                 <p class="card-text">{{content}}</p>
+                <p class="card-subtitle mb-2">
+                    Written by: {{user.username}} on {{format_date date_created}}
+                </p>
             </div>
                 {{#if logged_in}}
                 <form class="card-body comment-form">
